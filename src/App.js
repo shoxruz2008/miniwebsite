@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Navbar from './componets/miniwebsite/Navbar';
+import Hero from './componets/miniwebsite/Hero';
+import Card from './componets/miniwebsite/Card';
+
+import { data } from './data';
+
+const App = () => {
+	const cards = data.map((item) => {
+		return (
+			<Card
+				key={item.id}
+				img={item.coverImg}
+				rating={item.stats.rating}
+				reviewCount={item.stats.reviewCount}
+				location={item.location}
+				title={item.title}
+				price={item.price}
+			/>
+		);
+	});
+	return (
+		<div className="container">
+			<Navbar />
+			<Hero />
+
+			<section className="cards-list">{cards}</section>
+		</div>
+	);
+};
 
 export default App;
