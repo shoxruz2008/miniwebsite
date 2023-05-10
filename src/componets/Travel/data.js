@@ -17,7 +17,7 @@ export const countries = [
 		id: uuid(),
 		title: 'Sydney Opera House',
 		location: 'AUSTRALIA',
-		googleMapsUrl: 'https://goo.gl/maps/6DaL1rPzVGSxabJi7',
+		googleMapsUrl: 'https://goo.gl/maps/CTXCojb9sdYD1md3A',
 		startDate: '27 May, 2021',
 		endDate: '8 Jun, 2021',
 		description:
@@ -29,7 +29,7 @@ export const countries = [
 		id: uuid(),
 		title: 'Geirangerfjord',
 		location: 'NORWAY',
-		googleMapsUrl: 'https://goo.gl/maps/6DaL1rPzVGSxabJi7',
+		googleMapsUrl: 'https://goo.gl/maps/FRMq5s55LrJ8kskU8',
 		startDate: '01 Oct, 2021',
 		endDate: '18 Nov, 2021',
 		description:
